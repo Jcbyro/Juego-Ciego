@@ -11,7 +11,7 @@
     </head>
     <body>
         <div class="Resolucion"> 
-            <!-- Computadora - Diego Barchiesi -->
+            <!-- Computadora -->
             <div class="Computadora">
                 <header>
                     <div class="container p-2 text-black bg-opacity-50" id="fondo_header_footer">
@@ -57,20 +57,17 @@
                             <div class="col-md-12 col-sm-12 col-lg-12" id="titulo-ciego">
                                 <h2 id="puntaje-ciego"></h2>
                             </div>
-                            <div class="col-md-6 col-sm-6 col-lg-6 " id="juego_ciego_cuerpo">
+                            <div id="juego_ciego_cuerpo">
                                 <p id="texto-ciego"></p> 
                             </div>
-                            <div class="col-md-6 col-sm-6 col-lg-6 nav justify-content-center" id="juego_ciego_cuerpo">
-                                <img id="imagen-ciego" class="juego_ciego_imagenes" src="img/Inicio.png">
-                            </div>
 
-                            <div class="col-md-6 col-sm-6 col-lg-6">
+                            <div class="col-md-12 col-sm-12 col-lg-12" style="margin-bottom: 10px;">
                                 <ul class="nav nav-pills nav-fill">
                                     <li class="nav-item">
-                                        <a href="#"><button id="opc1-ciego" style="margin-bottom: 10px;" class="btn btn-outline-dark"><h4>Una cafeteria</h4></button></a>
+                                        <a href="#"><button id="opc1-ciego" class="btn btn-outline-dark"><h4>Una cafeteria</h4></button></a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#"><button id="opc2-ciego" style="margin-bottom: 10px;" class="btn btn-outline-dark"><h4>Un parque</h4></button></a>
+                                        <a href="#"><button id="opc2-ciego" class="btn btn-outline-dark"><h4>Un parque</h4></button></a>
                                     </li>
                                 </ul>
                             </div>
@@ -80,14 +77,14 @@
 
                 <script>
                     document.getElementById("texto-ciego").innerHTML = 
-                    "<h3>¡Bienvenidos!</h3><br>En este juego simularemos un día en la vida de una persona ciega donde el jugador explorara una ciudad virtual a través de descripciones de texto, y debe elegir la opcion correcta; se dara puntaje acorde a la opción seleccionada.<br><br><h3> Comenzamos </h3><br> Te despiertas por la mañana, como todos los dias llamas a tu perro para tener asistencia a la hora de levantarte y agarras tu baston en el lugar que siempre lo dejas, para comenzar el dia sales a tu lugar de siempre, la descripcion es: Es un lugar lleno de mesas de madera y sillas comodas, donde gente viene a beber y comer, tambien es donde se puede escuchar el murmullo de las conversaciones a tu alrededor. El lugar es:"
+                    "<br><h3>¡Bienvenidos!</h3><br>En este juego simularemos un día en la vida de una persona ciega donde el jugador explorara una ciudad virtual a través de descripciones de texto, y debe elegir la opcion correcta; se dara puntaje acorde a la opción seleccionada.<br><br><h5>Este juego fue hecho por Juan Cruz Byro.</h5><br><br><h3> Comenzamos </h3><br> Te despiertas por la mañana, como todos los dias llamas a tu perro para tener asistencia a la hora de levantarte y agarras tu baston en el lugar que siempre lo dejas, para comenzar el dia sales a tu lugar de siempre, la descripcion es:<br><br>Es un lugar lleno de mesas de madera y sillas comodas, donde gente viene a beber y comer, tambien es donde se puede escuchar el murmullo de las conversaciones a tu alrededor.<br><br>El lugar es:"
 
                     var puntaje = 0;
                     document.getElementById("puntaje-ciego").innerHTML =
-                    "Tu puntaje es: " + puntaje;
+                    "Mi puntaje es:  " + puntaje;
 
-                    document.getElementById("opc1-ciego").addEventListener("click", dic_530am)
-                    document.getElementById("opc2-ciego").addEventListener("click", dic_6am)
+                    document.getElementById("opc1-ciego").addEventListener("click", cafeteria)
+                    document.getElementById("opc2-ciego").addEventListener("click", parque)
                 </script>
 
                 <footer>
@@ -99,7 +96,7 @@
                 </footer>
             </div>
             
-            <!-- Celular - Juan Cruz Byro -->
+            <!-- Celular -->
             <div class="Celular">
                 <!-- Diapositiva -->
                 <div class="diapositiva">
@@ -143,24 +140,23 @@
                     <main>
                         <div class="container">
                             <div class="row">
-                                <div id="titulo-ciego">
+                                <div class="col-md-12 col-sm-12 col-lg-12" id="titulo-ciego">
                                     <h2>El dia de una persona ciega</h2>
                                 </div>
-                                <div id="titulo-ciego">
+                                <div class="col-md-12 col-sm-12 col-lg-12" id="titulo-ciego">
                                     <h2 id="puntaje-ciego"></h2>
                                 </div>
                                 <div id="juego_ciego_cuerpo">
                                     <p id="texto-ciego"></p> 
                                 </div>
-                                <br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-                                <div class="col-md-6 col-sm-6 col-lg-6">
+                                
+                                <div class="col-md-12 col-sm-12 col-lg-12" style="margin-bottom: 10px;">
                                     <ul class="nav nav-pills nav-fill">
                                         <li class="nav-item">
-                                            <a href="#"><button id="opc1-ciego" style="margin-bottom: 10px;" class="btn btn-outline-dark"><h4>5:30am</h4></button></a>
+                                            <a href="#"><button id="opc1-ciego" class="btn btn-outline-dark"><h4>Una cafeteria</h4></button></a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#"><button id="opc2-ciego" style="margin-bottom: 10px;" class="btn btn-outline-dark"><h4>6:00am</h4></button></a>
+                                            <a href="#"><button id="opc2-ciego" class="btn btn-outline-dark"><h4>Un parque</h4></button></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -169,21 +165,21 @@
                     </main>
 
                     <script>
-                        document.getElementById("texto-ciego").innerHTML =
-                        "<h3>¡Bienvenidos!</h3><br> En este juego simularemos un día en la vida de una persona ciega donde se deberán tomar decisiones sobre acciones cotidianas y se dará puntaje acorde a la opción seleccionada. <br><br><h3> Comenzamos </h3><br> Es lunes por la mañana, trabajas en una escuela y tu horario es de 7am a 12 pm. Para llegar allí, utilizas el transporte público, el recorrido suele durar 1 hr, pero te tardas 15 min en llegar al transporte. Debes decidir si despertarte temprano para evitar la hora pico o despertarte un poco mas tarde para llegar a tiempo; los horarios son:"
+                        document.getElementById("texto-ciego").innerHTML = 
+                        "<br><h3>¡Bienvenidos!</h3><br>En este juego simularemos un día en la vida de una persona ciega donde el jugador explorara una ciudad virtual a través de descripciones de texto, y debe elegir la opcion correcta; se dara puntaje acorde a la opción seleccionada.<br><br><h5>Este juego fue hecho por Juan Cruz Byro.</h5><br><br><h3> Comenzamos </h3><br> Te despiertas por la mañana, como todos los dias llamas a tu perro para tener asistencia a la hora de levantarte y agarras tu baston en el lugar que siempre lo dejas, para comenzar el dia sales a tu lugar de siempre, la descripcion es:<br><br>Es un lugar lleno de mesas de madera y sillas comodas, donde gente viene a beber y comer, tambien es donde se puede escuchar el murmullo de las conversaciones a tu alrededor.<br><br>El lugar es:"
     
                         var puntaje = 0;
                         document.getElementById("puntaje-ciego").innerHTML =
-                        "Tu puntaje es: " + puntaje;
+                        "Mi puntaje es:  " + puntaje;
     
-                        document.getElementById("opc1-ciego").addEventListener("click", dic_530am)
-                        document.getElementById("opc2-ciego").addEventListener("click", dic_6am)
+                        document.getElementById("opc1-ciego").addEventListener("click", cafeteria)
+                        document.getElementById("opc2-ciego").addEventListener("click", parque)
                     </script>
 
 
                     <!-- Footer -->
                     <div class="footer">
-                        <div class="rectangulo-bordes" style= "height: 100px;">
+                        <div class="rectangulo-bordes" style= "height: 120px;">
                         </div>
                             <div class="texto_final">
                                 <p>Derechos reservados - Sitio desarrollado para uso educativo - Diseño y desarrollo Web - UADE - 2024</p>

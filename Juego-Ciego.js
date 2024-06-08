@@ -1,167 +1,103 @@
-function dic_530am() {
-    puntaje += 5;
+function cafeteria() {
+    puntaje += 10;
     document.getElementById("puntaje-ciego").innerHTML =
     "Tu puntaje es: " + puntaje;
 
-    document.getElementById("imagen-ciego").src =
-    "img/530.png"
-
     document.getElementById("texto-ciego").innerHTML =
-    "Te despiertas por la mañana, como todos los dias llamas a tu perro para tener asistencia a la hora de levantarte y agarras tu baston en el lugar que siempre lo dejas, para comenzar el dia sales a tu lugar de siempre, la descripcion es: Es un lugar lleno de mesas de madera y sillas comodas, donde gente viene a beber y comer, tambien es donde se puede escuchar el murmullo de las conversaciones a tu alrededor. El lugar es:"
+    "Despues de pasar por la usual cafeteria con permiso para perros guia vas llendo a tu trabajo. Despues de tomar tu usual cafe vas en camino a tu trabajo, en el camino debes utilizar un medio de transporte, este transporte produce vibraciones cuando este por llegar y se escucha la llegada del transporte por los altavoces. Cual es este medio de transporte?"
 
-    document.getElementById("opc1-ciego").removeEventListener("click", dic_530am)    
-    document.getElementById("opc2-ciego").removeEventListener("click", dic_6am)
+    document.getElementById("opc1-ciego").removeEventListener("click", cafeteria)    
+    document.getElementById("opc2-ciego").removeEventListener("click", parque)
 
     document.getElementById("opc1-ciego").innerHTML =
-    "Colectivo"
-    document.getElementById("opc1-ciego").addEventListener("click", colectivo_correcto)
+    "Un tren"
+    document.getElementById("opc1-ciego").addEventListener("click", tren)
 
     document.getElementById("opc2-ciego").innerHTML =
-    "Caminar"
-    document.getElementById("opc2-ciego").addEventListener("click", caminar_incorrecto)
+    "Un colectivo"
+    document.getElementById("opc2-ciego").addEventListener("click", colectivo)
 }
 
-function dic_6am() {
-    puntaje -= 5;
+function parque() {
+    puntaje -= 10;
     document.getElementById("puntaje-ciego").innerHTML =
     "Tu puntaje es: " + puntaje;
 
-    document.getElementById("imagen-ciego").src =
-    "img/6.png"
-
     document.getElementById("texto-ciego").innerHTML =
-    "Decidistes dormir un poco mas, pero por eso llegas 15 minutos mas tarde de lo necesario, te disculpas con tu jefe, y haces las clases del dia. Despues de clase, decides ir a pasear a un parque cercano, queres tomar un colectivo o caminar hasta alla?"
+    "Pasar por un parque no es una mala opcion ya que el tranquilo viento te ayuda a relajarte, pero no te ayuda a despertarte tanto que como un buen cafe a la mañana. Despues de tomar un paseo por el parque con tu perro vas en camino a tu trabajo, en el camino debes utilizar un medio de transporte, este transporte produce vibraciones cuando este por llegar y se escucha la llegada del transporte por los altavoces. Cual es este medio de transporte?"
 
-    document.getElementById("opc1-ciego").removeEventListener("click", dic_530am)    
-    document.getElementById("opc2-ciego").removeEventListener("click", dic_6am)
+    document.getElementById("opc1-ciego").removeEventListener("click", cafeteria)    
+    document.getElementById("opc2-ciego").removeEventListener("click", parque)
 
     document.getElementById("opc1-ciego").innerHTML =
-    "Colectivo"
-    document.getElementById("opc1-ciego").addEventListener("click", colectivo_correcto)
+    "Un tren"
+    document.getElementById("opc1-ciego").addEventListener("click", tren)
 
     document.getElementById("opc2-ciego").innerHTML =
-    "Caminar"
-    document.getElementById("opc2-ciego").addEventListener("click", caminar_incorrecto)
+    "Un colectivo"
+    document.getElementById("opc2-ciego").addEventListener("click", colectivo)
 }
 
-function colectivo_correcto() {
-    puntaje += 5;
+function tren() {
+    puntaje += 10;
     document.getElementById("puntaje-ciego").innerHTML =
     "Tu puntaje es: " + puntaje;
 
-    document.getElementById("imagen-ciego").src =
-    "img/Parque-1.png"
-
     document.getElementById("texto-ciego").innerHTML =
-    "Decidiste ir a la parada del colectivo, esta decisión tiene el lado bueno de que no hay necesidad de caminar. Al llegar paseas un poco por el parque y disfrutas del viento. Unos amigos de la escuela te invitan a comer a algun lado<br><br>Podes decidir pedir que alguien te lleve o ir en taxi, que queres hacer?"
+    "Te bajastes del tren con tu perro, y lograstes llegar a tu trabajo; haces tu usual trabajo y hoy te dejan irte temprano. Decides salir a pasear antes de volver, "
 
-    document.getElementById("opc1-ciego").removeEventListener("click", colectivo_correcto)
-    document.getElementById("opc2-ciego").removeEventListener("click", caminar_incorrecto)
+    document.getElementById("opc1-ciego").removeEventListener("click", tren)
+    document.getElementById("opc2-ciego").removeEventListener("click", colectivo)
 
     document.getElementById("opc1-ciego").innerHTML =
-    "Usar un colectivo"
-    document.getElementById("opc1-ciego").addEventListener("click", colectivo)
+    ""
+    document.getElementById("opc1-ciego").addEventListener("click", )
 
     document.getElementById("opc2-ciego").innerHTML =
-    "Pedir un taxi"
-    document.getElementById("opc2-ciego").addEventListener("click", taxi)
-}
-
-function caminar_incorrecto() {
-    puntaje -= 5;
-    document.getElementById("puntaje-ciego").innerHTML =
-    "Tu puntaje es: " + puntaje;
-
-    document.getElementById("imagen-ciego").src =
-    "img/Parque-2.png"
-    
-    document.getElementById("texto-ciego").innerHTML =
-    "Decidiste caminar, llegas un poco tarde de lo que esperabas asi que no tuvistes mucho tiempo de disfrutar del parque y el viento. Unos amigos de la escuela te invitan a comer a algun lado<br><br>Podes decidir pedir que alguien te lleve o ir en taxi, que queres hacer?"
-
-    document.getElementById("opc1-ciego").removeEventListener("click", colectivo_correcto)
-    document.getElementById("opc2-ciego").removeEventListener("click", caminar_incorrecto)
-
-    document.getElementById("opc1-ciego").innerHTML =
-    "Usar un colectivo"
-    document.getElementById("opc1-ciego").addEventListener("click", colectivo)
-
-    document.getElementById("opc2-ciego").innerHTML =
-    "Pedir un taxi"
-    document.getElementById("opc2-ciego").addEventListener("click", taxi)
+    ""
+    document.getElementById("opc2-ciego").addEventListener("click", )
 }
 
 function colectivo() {
+    puntaje -= 10;
     document.getElementById("puntaje-ciego").innerHTML =
     "Tu puntaje es: " + puntaje;
 
-    document.getElementById("imagen-ciego").src =
-    "img/Restaurante-1.png"
-
     document.getElementById("texto-ciego").innerHTML =
-    "Decidiste subirte a un colectivo para llegar al restaurante, charlas y a la hora de pedir comida, pedis ayuda a uno de tus compañeros para saber que podes pedir."
+    ""
 
-    document.getElementById("opc1-ciego").removeEventListener("click", taxi)    
-    document.getElementById("opc2-ciego").removeEventListener("click", taxi)
+    document.getElementById("opc1-ciego").removeEventListener("click", tren)
+    document.getElementById("opc2-ciego").removeEventListener("click", colectivo)
 
     document.getElementById("opc1-ciego").innerHTML =
-    "Pedir ayuda"
-    document.getElementById("opc1-ciego").addEventListener("click", ayuda)
+    ""
+    document.getElementById("opc1-ciego").addEventListener("click", )
 
     document.getElementById("opc2-ciego").innerHTML =
-    "Pedir ayuda"
-    document.getElementById("opc2-ciego").addEventListener("click", ayuda)
+    ""
+    document.getElementById("opc2-ciego").addEventListener("click", )
 }
 
-function taxi() {
-    document.getElementById("puntaje-ciego").innerHTML =
-    "Tu puntaje es: " + puntaje;
 
-    document.getElementById("imagen-ciego").src =
-    "img/Restaurante-2.png"
 
-    document.getElementById("texto-ciego").innerHTML =
-    "Decidiste subirte a un taxi para llegar al restaurante, charlas y a la hora de pedir comida, pedis ayuda a uno de tus compañeros para saber que podes pedir."
 
-    document.getElementById("opc1-ciego").removeEventListener("click", taxi)    
-    document.getElementById("opc2-ciego").removeEventListener("click", taxi)
 
-    document.getElementById("opc1-ciego").innerHTML =
-    "Pedir ayuda"
-    document.getElementById("opc1-ciego").addEventListener("click", ayuda)
 
-    document.getElementById("opc2-ciego").innerHTML =
-    "Pedir ayuda"
-    document.getElementById("opc2-ciego").addEventListener("click", ayuda)
-}
 
-function ayuda () {
-    document.getElementById("puntaje-ciego").innerHTML =
-    "Tu puntaje es: " + puntaje;
 
-    document.getElementById("imagen-ciego").src =
-    "img/Ayuda.png"
 
-    document.getElementById("texto-ciego").innerHTML =
-    "Pedis ayuda y comes con tus amigos. Despues de comer le pides a uno de tus amigos que te lleve a casa."
 
-    document.getElementById("opc1-ciego").removeEventListener("click", ayuda)
-    document.getElementById("opc2-ciego").removeEventListener("click", ayuda)
 
-    document.getElementById("opc1-ciego").innerHTML =
-    "Volver con tu amigo"
-    document.getElementById("opc1-ciego").addEventListener("click", volver_casa)
 
-    document.getElementById("opc2-ciego").innerHTML =
-    "Volver con tu amigo"
-    document.getElementById("opc2-ciego").addEventListener("click", volver_casa)
-}
+
+
+
+
+
 
 function volver_casa() {
     document.getElementById("puntaje-ciego").innerHTML =
     "Tu puntaje es: " + puntaje;
-
-    document.getElementById("imagen-ciego").src =
-    "img/Volver.png"
 
     if(puntaje == 10) 
         document.getElementById("texto-ciego").innerHTML =
@@ -172,7 +108,7 @@ function volver_casa() {
     else 
         document.getElementById("texto-ciego").innerHTML =
         "Esperamos que este juego te haya ayudado a apreciar los desafíos que existen, pero quizás se nos pasan por alto. El objetivo de esta actividad es de mostrar las dificultades del día a día ciega de ruedas que pueden pasar desapercibidas para muchas personas.<br>Esto es solo una mínima porción de la realidad a la que se enfrentan.<br>Qué pasaría si no hay otra opción mas que caminar hasta el parque o no es posible pedir un taxi o un amigo?<br><br>Estas con cuestiones que como sociedad deberíamos considerarlas para actuar en consecuencia y asegurar que todo, desde transporte, calles, accesos a lugares sean accesibles para todos.<br><br>Muchas gracias."
-    
+
     document.getElementById("opc1-ciego").innerHTML =
     "Volver a Home"
     document.getElementById("opc1-ciego").addEventListener("click", function() {
