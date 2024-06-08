@@ -7,7 +7,7 @@ function dic_530am() {
     "img/530.png"
 
     document.getElementById("texto-ciego").innerHTML =
-    "Decidistes levantarte temprano para evitar la hora pico, llegas 15 minutos antes de comenzar la clase, y haces las clases del dia. Despues de clase, decides ir a pasear a un parque cercano, queres tomar un colectivo o caminar hasta alla?"
+    "Te despiertas por la mañana, como todos los dias llamas a tu perro para tener asistencia a la hora de levantarte y agarras tu baston en el lugar que siempre lo dejas, para comenzar el dia sales a tu lugar de siempre, la descripcion es: Es un lugar lleno de mesas de madera y sillas comodas, donde gente viene a beber y comer, tambien es donde se puede escuchar el murmullo de las conversaciones a tu alrededor. El lugar es:"
 
     document.getElementById("opc1-ciego").removeEventListener("click", dic_530am)    
     document.getElementById("opc2-ciego").removeEventListener("click", dic_6am)
