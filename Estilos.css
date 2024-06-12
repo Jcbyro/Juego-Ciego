@@ -99,28 +99,28 @@
 
 .home {
     left: 31px;
-    top: 522px;
+    bottom: -200px;
     width: 79px;
     height: 38px;
 }
 
 .integrantes {
     left: 246px;
-    top: 522px;
+    bottom: -200px;
     width: 123px;
     height: 38px;
 }
 
 .avances {
     left: 20px;
-    top: 590px;
+    bottom: -270px;
     width: 102px;
     height: 38px;
 }
 
 .juegos {
     left: 262px;
-    top: 590px;
+    bottom: -270px;
     width: 91px;
     height: 38px;
 }
@@ -128,9 +128,9 @@
 /* Derechos reservados - Sitio desarrollado para uso educativo - Diseño y desarrollo Web - UADE - 2024 */
 .footer_JC {
     position: absolute;
-    top: 900px;
+    bottom: -400px;
     width: 400px;
-    height: 99px;
+    height: 100px;
 }
 
 .texto_final {
