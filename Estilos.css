@@ -35,7 +35,7 @@
 }
 
 #fondo_header_footer{
-    background-color: #922016;
+    background-color: rgb(34, 24, 126);
 }
 
 #menu{
@@ -48,13 +48,18 @@
     text-align: center;
 }
 
-#titulo-ciego{
+#titulo-ciego-compu{
+    text-align: center;
+    margin-top: 10px;
+}
+
+#titulo-ciego-celu{
     text-align: center;
     margin-top: 10px;
 }
 
 .rectangulo-bordes {
-    background: #922016;
+    background: rgb(34, 24, 126);
 }
 
 /* Texto Segundo Parcial */
@@ -121,10 +126,9 @@
 }
 
 /* Derechos reservados - Sitio desarrollado para uso educativo - Diseño y desarrollo Web - UADE - 2024 */
-.footer {
+.footer_JC {
     position: absolute;
-    left: 0px;
-    top: 667px;
+    top: 900px;
     width: 400px;
     height: 99px;
 }
@@ -132,7 +136,7 @@
 .texto_final {
     position: absolute;
     left: 16px;
-    top: 14px;
+    top: 20px;
     font-size: 20px;
     line-height: 1.2;
     text-align: start;
