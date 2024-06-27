@@ -70,7 +70,7 @@
     height: 65px;
     font-size: 40px;
     font-family: "sourcesanspro";
-    color: black;
+    color: white;
 }
 
 /* Botones Link */
@@ -99,28 +99,28 @@
 
 .home {
     left: 31px;
-    bottom: -200px;
+    top: 80px;
     width: 79px;
     height: 38px;
 }
 
 .integrantes {
     left: 246px;
-    bottom: -200px;
+    top: 80px;
     width: 123px;
     height: 38px;
 }
 
 .avances {
     left: 20px;
-    bottom: -270px;
+    top: 140px;
     width: 102px;
     height: 38px;
 }
 
 .juegos {
     left: 262px;
-    bottom: -270px;
+    top: 140px;
     width: 91px;
     height: 38px;
 }
@@ -128,7 +128,7 @@
 /* Derechos reservados - Sitio desarrollado para uso educativo - Diseño y desarrollo Web - UADE - 2024 */
 .footer_JC {
     position: absolute;
-    bottom: -400px;
+    bottom: -525px;
     width: 400px;
     height: 100px;
 }
@@ -140,6 +140,6 @@
     font-size: 20px;
     line-height: 1.2;
     text-align: start;
-    color: black;
+    color: white;
     font-family: "sourcesanspro";
 }
