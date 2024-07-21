@@ -20,7 +20,7 @@
                                 <h3 class="nav justify-content-center"> Segundo Parcial </h3>
                             </div>
                         </div>
-                    </div> 
+                    </div>
 
                     <div class="container" id="menu">
                         <div class="row">
@@ -64,7 +64,7 @@
                             <div class="col-md-12 col-sm-12 col-lg-12" style="margin-bottom: 10px;">
                                 <ul class="nav nav-pills nav-fill">
                                     <li class="nav-item">
-                                        <a href="#"><button id="opc1-ciego-compu" class="btn btn-outline-dark"><h4>Una cafeteria</h4></button></a>
+                                        <a href="#"><button id="opc1-ciego-compu" class="btn btn-outline-dark"><h4>Un restaurante</h4></button></a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="#"><button id="opc2-ciego-compu" class="btn btn-outline-dark"><h4>Un parque</h4></button></a>
@@ -77,14 +77,24 @@
 
                 <script>
                     document.getElementById("texto-ciego-compu").innerHTML = 
-                    "<br><h3>¡Bienvenidos!</h3><br>En este juego simularemos un día en la vida de una persona ciega donde el jugador explorara una ciudad virtual a través de descripciones de texto, y debe elegir la opcion correcta; se dara puntaje acorde a la opción seleccionada.<br><br><h5>Este juego fue hecho por Juan Cruz Byro.</h5><br><br><h3> Comenzamos </h3><br> Te despiertas por la mañana, como todos los dias llamas a tu perro para tener asistencia a la hora de levantarte y agarras tu baston en el lugar que siempre lo dejas, para comenzar el dia sales a tu lugar de siempre, la descripcion es:<br><br>Es un lugar lleno de mesas de madera y sillas comodas, donde gente viene a beber y comer, tambien es donde se puede escuchar el murmullo de las conversaciones a tu alrededor.<br><br>El lugar es:"
-
+                    `<br><h3>¡Bienvenidos!</h3><br>En este juego simularemos un día en la vida de una persona ciega donde el jugador explorará una ciudad virtual a través de audios, y deberá elegir la opción<br>correcta al escuchar 2 audios; se dará puntaje acorde a la opción seleccionada. (La opcion correspondiente al audio se encuentra debajo de ella)<br><br><h5>Este juego fue hecho por Juan Cruz Byro.</h5><br><br><h3>¡¡¡Comenzamos!!!</h3>
+                    <div id="audio-container_Compu">
+                        <audio id="audio1_Compu" class="draggable" controls preload>
+                            <source src="Sonidos/Restaurante.mp3" type="audio/mpeg">
+                            Tu navegador no soporta el elemento de audio.
+                        </audio>
+                        <audio id="audio2_Compu" class="draggable" controls preload>
+                            <source src="Sonidos/Parque.mp3" type="audio/mpeg">
+                            Tu navegador no soporta el elemento de audio.
+                        </audio>
+                    </div>`;
+                
                     var puntaje = 0;
                     document.getElementById("puntaje-ciego-compu").innerHTML =
                     "Mi puntaje es: " + puntaje;
-
-                    document.getElementById("opc1-ciego-compu").addEventListener("click", cafeteria_compu)
-                    document.getElementById("opc2-ciego-compu").addEventListener("click", parque_compu)
+                
+                    document.getElementById("opc1-ciego-compu").addEventListener("click", restaurante_compu);
+                    document.getElementById("opc2-ciego-compu").addEventListener("click", parque_compu);
                 </script>
 
                 <!-- Footer -->
@@ -102,7 +112,7 @@
                 <!-- Dispositiva -->
                 <div class="diapositiva">
                     <!-- Segundo Parcial -->
-                    <div class="rectangulo-bordes" style= "height: 67px;"></div>
+                    <div class="rectangulo-bordes" style="height: 67px;"></div>
                     <div class="titulo">
                         <p>Segundo Parcial</p>
                     </div>
@@ -135,30 +145,30 @@
                             <div class="text juegos" style="top: 50%; left: 50%; transform: translate(-50%, -100%);">Juegos</div>
                         </a>
                     </div>
-                    <br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br>
 
                     <!-- Juego -->
                     <main>
                         <div class="container">
                             <div class="row">
                                 <div id="titulo-ciego-celu">
-                                    <h2>El dia de una persona ciega</h2>
+                                    <h2>El día de una persona ciega</h2>
                                 </div>
-
+                    
                                 <div id="titulo-ciego-celu">
                                     <h2 id="puntaje-ciego-celu"></h2>
                                 </div>
                                 <div id="juego_ciego_cuerpo">
                                     <p id="texto-ciego-celu"></p> 
                                 </div>
-
-                                <div style="margin-bottom: 10px;">
+                    
+                                <div id="botones-container-celu" style="margin-bottom: 10px;">
                                     <ul class="nav nav-fill">
                                         <li class="nav-item">
-                                            <a href="#"><button id="opc1-ciego-celu" class="btn btn-outline-dark"><h4>Una cafeteria</h4></button></a>
+                                            <a href="#"><button id="opc1-ciego-celu" class="btn btn-outline-dark draggable"><h4>Una restaurante</h4></button></a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#"><button id="opc2-ciego-celu" class="btn btn-outline-dark"><h4>Un parque</h4></button></a>
+                                            <a href="#"><button id="opc2-ciego-celu" class="btn btn-outline-dark draggable"><h4>Un parque</h4></button></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -168,19 +178,29 @@
 
                     <script>
                         document.getElementById("texto-ciego-celu").innerHTML = 
-                        "<br><h3>¡Bienvenidos!</h3><br>En este juego simularemos un día en la vida de una persona ciega donde el jugador explorara una ciudad virtual a través de descripciones de texto, y debe elegir la opcion correcta; se dara puntaje acorde a la opción seleccionada.<br><br><h5>Este juego fue hecho por Juan Cruz Byro.</h5><br><br><h3> Comenzamos </h3><br> Te despiertas por la mañana, como todos los dias llamas a tu perro para tener asistencia a la hora de levantarte y agarras tu baston en el lugar que siempre lo dejas, para comenzar el dia sales a tu lugar de siempre, la descripcion es:<br><br>Es un lugar lleno de mesas de madera y sillas comodas, donde gente viene a beber y comer, tambien es donde se puede escuchar el murmullo de las conversaciones a tu alrededor.<br><br>El lugar es:"
-
+                        `<br><h3>¡Bienvenidos!</h3><br>En este juego simularemos un día en la vida de una persona ciega donde el jugador explorará una ciudad virtual a través de audios, y deberá elegir la opción<br>correcta al escuchar 2 audios; se dará puntaje acorde a la opción seleccionada. (La opción correspondiente al audio se encuentra debajo de ella)<br><br><h5>Este juego fue hecho por Juan Cruz Byro.</h5><br><br><h3>¡¡¡Comenzamos!!!</h3><br>Te despiertas, y decides ir a un lugar donde se escucha las voces de mucha gente y sonidos de platos. Este lugar es?
+                        <div id="audio-container_Celu">
+                            <audio id="audio1_Celu" class="draggable" controls preload>
+                                <source src="Sonidos/Restaurante.mp3" type="audio/mpeg">
+                                Tu navegador no soporta el elemento de audio.
+                            </audio>
+                            <audio id="audio2_Celu" class="draggable" controls preload>
+                                <source src="Sonidos/Parque.mp3" type="audio/mpeg">
+                                Tu navegador no soporta el elemento de audio.
+                            </audio>
+                        </div>`;
+                    
                         var puntaje = 0;
                         document.getElementById("puntaje-ciego-celu").innerHTML =
                         "Mi puntaje es: " + puntaje;
-
-                        document.getElementById("opc1-ciego-celu").addEventListener("click", cafeteria)
-                        document.getElementById("opc2-ciego-celu").addEventListener("click", parque)
+                    
+                        document.getElementById("opc1-ciego-celu").addEventListener("click", restaurante_celu);
+                        document.getElementById("opc2-ciego-celu").addEventListener("click", parque_celu);
                     </script>
 
                     <!-- Footer -->
                     <div class="footer_JC">
-                        <div class="rectangulo-bordes" style="height: 110px;">
+                        <div class="rectangulo-bordes" style="height: 110px; bottom: -200px;">
                         </div>
                             <div class="texto_final">
                                 <p>Derechos reservados - Sitio desarrollado para uso educativo - Diseño y desarrollo Web - UADE - 2024</p>
