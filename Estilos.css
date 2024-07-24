@@ -37,7 +37,7 @@
 #fondo_header_footer{
     position: relative;
     background-color: rgb(34, 24, 126);
-    color: #fff !important;
+    color: #fff !important; /* !important, hace que tome prioridad por todo lo demas */
     font-family: "sourcesanspro";
 }
 
